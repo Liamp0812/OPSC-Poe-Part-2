@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:hint="DD/MM/YYYY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/editTextCategory"
+                android:hint="E.g. Food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonAddCategory"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Add Category"
+                android:textColor="#FFFFFF"
+                android:background="#4CAF50"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextStartTime"
+            android:hint="Start Time (e.g. 10:00)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextEndTime"
+            android:hint="End Time (e.g. 12:00)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:hint="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/buttonAddExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="#FFFFFF"
+            android:background="#2196F3"
+            android:layout_marginBottom="20dp"/>
+
+        <ListView
+            android:id="@+id/listViewExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:dividerHeight="1dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonViewBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Budget"
+            android:textColor="#FFFFFF"
+            android:background="#FF5722"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
