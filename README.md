@@ -45,5 +45,5 @@ Styled buttons on login and signup screens.
 Used custom backgrounds and improved button alignment.
 
 YOUTUBE LINK OF VIDEO
-https://www.youtube.com/shorts/Clux5bNJm 
+(https://youtube.com/shorts/Clux5bNJmgs)
 
