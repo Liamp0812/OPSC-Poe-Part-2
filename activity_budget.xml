@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Total Expenses Text -->
+    <TextView
+        android:id="@+id/textViewTotalExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: $0"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Minimum and Maximum Goal Inputs -->
+    <EditText
+        android:id="@+id/editTextMinGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Minimum Goal"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextMaxGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Maximum Goal"
+        android:inputType="numberDecimal" />
+
+    <!-- Set Goals Button -->
+    <Button
+        android:id="@+id/buttonSetGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Goals" />
+
+    <!-- Start Date Input -->
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date (DD/MM/YYYY)" />
+
+    <!-- End Date Input -->
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date (DD/MM/YYYY)" />
+
+    <!-- Filter Button -->
+    <Button
+        android:id="@+id/buttonFilterExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Expenses" />
+
+    <!-- RecyclerView for displaying expenses -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
